@@ -118,7 +118,7 @@ int main(int argc, char* argv[]) {
 			printf("%c", mem[ptr]); 
 		
 		else if (c == ',')
-			mem[ptr] == getchar(c);
+			mem[ptr] = getchar(c);
 
 		++char_num;
 	}
