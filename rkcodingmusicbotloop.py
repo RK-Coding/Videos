@@ -154,12 +154,14 @@ async def play(ctx):
 
 @client.command(name='pause', help='This command pauses the song')
 async def pause(ctx):
+    server = ctx.message.guild
     voice_channel = server.voice_client
 
     voice_channel.pause()
 
 @client.command(name='resume', help='This command resumes the song!')
 async def resume(ctx):
+    server = ctx.message.guild
     voice_channel = server.voice_client
 
     voice_channel.resume()
